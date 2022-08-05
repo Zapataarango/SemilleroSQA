@@ -9,7 +9,7 @@ public class AdidasPages {
 
     private By btnHome = By.xpath("//a[@data-auto-id='logo']");
 
-    private By btnDeportes = By.xpath("//a[contains(text(),'DEPORTES')]");
+    private By btnDeportes = By.xpath("//a[text() = 'DEPORTES']");
 
     private By btnCamiseta = By.xpath("//img[contains(@title, 'Camiseta Titular Selecci') and contains(@title, 'n Colombia')]");
 
