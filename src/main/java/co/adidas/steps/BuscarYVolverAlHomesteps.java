@@ -22,12 +22,13 @@ public class BuscarYVolverAlHomesteps extends MetodoSeleniumSteps{
         catch (IOException e) {  e.printStackTrace();    }
 
         for(int a=6;a>=1;a--){
-
             scroll.scrollAElemento(adidasPages.getBtnProducto(a));
 
             clickear(adidasPages.getBtnProducto(a));
 
             esperaimplicita.esperar(5);
+            if(a==6) clickear(adidasPages.getBtnCerrar());
+
 
             validacion(adidasPages.getLblNombreProd1(),leerExcel.get(a).get("Producto"));
 
